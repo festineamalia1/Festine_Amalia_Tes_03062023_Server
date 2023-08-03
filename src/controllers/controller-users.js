@@ -1,6 +1,9 @@
 const config = require("../configs/database");
 const mysql = require("mysql");
 const pool = mysql.createPool(config);
+const bycript = require("bcrypt");
+
+const md5 = require("md5");
 
 pool.on("error", (err) => {
   console.log(err);
@@ -42,10 +45,11 @@ module.exports = {
   },
 
   addDataUser(req, res) {
+    // const hashPassword = bycript.hash(req.body.pass, 10);
     let data = {
       namalengkap: req.body.nama,
       username: req.body.user,
-      password: req.body.pass,
+      password: md5(req.body.pass),
       status: req.body.status,
     };
     pool.getConnection(function (err, connection) {
