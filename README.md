@@ -17,7 +17,7 @@ In the project directory, you can run:
 
 ### `nodemon`
 
-Runs the app in the development mode.<br />
+
 
 list api :
 - GET http://localhost:8080/users
