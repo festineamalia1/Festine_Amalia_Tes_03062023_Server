@@ -3,10 +3,7 @@
 
 ## Available Scripts
 
-open xampp control panel
-start apache adn mySQL
-make data base in http://localhost/phpmyadmin/
-import db_user.sql
+
 
 In the project directory, you can install:
 ### `npm install`
