@@ -1,4 +1,18 @@
-# nodejs-restapi-mysql
-Learn how to build a structured api rest with Node.js and MySQL
+# Festine Amalia tes 03/08/2023 Server
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-link : https://dazelpro.com/article/belajar-membuat-restful-api-dengan-express-js-dan-mysql
+## Available Scripts
+
+In the project directory, you can run:
+
+### `nodemon`
+
+Runs the app in the development mode.<br />
+
+list api :
+- GET http://localhost:8080/users
+- GET http://localhost:8080/users/{id}
+- POST http://localhost:8080/users
+- POST http://localhost:8080/users/edit/{id}
+- POST http://localhost:8080/users/delete/{id}
+
